@@ -1,0 +1,10 @@
+body{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: $font1; 
+    color: map_get($colors, black-light);
+    h1, h2, p{
+       color: map_get($colors, black-light);
+    }
+}

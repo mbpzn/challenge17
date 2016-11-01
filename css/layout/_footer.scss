@@ -1,0 +1,15 @@
+footer{
+background-color:  #c9c9ca;
+margin:0;
+margin-top:7%;
+
+p{
+    font-size:14px;
+    margin:0;
+    @include center-hor;
+    padding:46px;
+    color: #4d4d4e;
+    letter-spacing:1px;
+     word-spacing: 2px;
+}
+}

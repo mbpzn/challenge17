@@ -1,0 +1,10 @@
+
+.about-img{
+  @include center-hor;
+   width: 530px;
+   @include media($mobile) { 
+   width: 90%;
+   height:90%;
+   max-width:530px;
+    } 
+}
