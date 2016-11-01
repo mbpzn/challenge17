@@ -1,0 +1,47 @@
+
+.hidden{
+    display:none;
+}
+.main-header{ 
+min-height: 100vh;
+  background: url(img/bg.png) no-repeat center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   img{
+      @include center-hor;
+      padding-top:40px;
+  }
+}
+.first-header,.second-header,.third-header{
+       @include center-hor;
+         text-transform: uppercase;
+         color:#1a2732;
+}
+  .first-header{
+      margin-top:0;
+      font-size: 3.6vw;
+      font-weight: 700;
+      padding-top:44vh;
+      letter-spacing:7px;
+      @include media($mobile) { 
+      font-size: 1.2em;
+      letter-spacing:4px;
+}
+  }
+  
+.third-header{
+    font-size:0.8em;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    padding:20px;
+    max-width: 800px;
+    font-weight:bolder;
+    letter-spacing:1px;
+    line-height: 29px;
+     @include media($mobile) { 
+       font-size:0.6em;
+}   
+  }

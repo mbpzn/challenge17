@@ -1,0 +1,45 @@
+
+section{
+    width: 100%;
+    padding-top:40px;
+    padding-bottom:40px;
+    @include media($mobile) { 
+      padding-top:20px;
+    padding-bottom:20px;
+    }
+}
+.section-content{
+    @include outer-container;
+    width: 100%;
+    @include media($laptop) { 
+        width: 800px;
+    }
+    @include media($tablet) { 
+        width: 600px;
+    }
+    @include media($mobile) { 
+        width: 100%;
+    }
+}
+.section-header, .header-underline, .header-text{
+@include center-hor;
+}
+.section-header{
+  font-size:33px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin:5px;  
+}
+.header-underline{
+background-color:  #dddbdb;
+width: 45px;
+height: 3px;
+margin-bottom: 20px;
+}
+.header-text, .box-text{
+    font-weight: 300;
+    font-size:12px;
+    padding:10px;
+    max-width: 511px;
+}
