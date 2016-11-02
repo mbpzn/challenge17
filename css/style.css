@@ -42,13 +42,34 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media screen and (max-width: 868px) {
+    .main-header {
+      background: url(img/bg.png) no-repeat bottom center; } }
   .main-header img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-top: 40px; }
+    padding-top: 30px; }
 
+.arrow-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  -webkit-animation: bounce 2s infinite ease-in-out; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px); } }
 .first-header, .second-header, .third-header {
   display: block;
   margin-left: auto;
@@ -63,10 +84,12 @@ footer {
   font-weight: 700;
   padding-top: 44vh;
   letter-spacing: 7px; }
+  @media screen and (max-width: 868px) {
+    .first-header {
+      padding-top: 20%; } }
   @media screen and (max-width: 620px) {
     .first-header {
-      font-size: 1.2em;
-      letter-spacing: 4px; } }
+      padding-top: 13vh; } }
 
 .third-header {
   font-size: 0.8em;
@@ -508,6 +531,9 @@ section {
         .contact .socials .icon-group i {
           font-size: 1.4em; } }
 .contact .icon-box1 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #0e9ef9; }
 .contact .icon-box2 {
   background-color: #51d7fd; }
@@ -559,6 +585,9 @@ section {
 .icon-box3,
 .icon-box4,
 .icon-box5 {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -605,6 +634,9 @@ section {
   .icon-box3 i,
   .icon-box4 i,
   .icon-box5 i {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     max-width: 50px;
     display: block;
     margin-left: auto;

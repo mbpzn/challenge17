@@ -9,10 +9,27 @@ min-height: 100vh;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+      @include media($tablet) { 
+       background: url(img/bg.png) no-repeat bottom center; 
+}
    img{
       @include center-hor;
-      padding-top:40px;
+      padding-top:30px;
+   
   }
+}
+.arrow-box{
+  @include center-hor;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
 }
 .first-header,.second-header,.third-header{
        @include center-hor;
@@ -25,12 +42,13 @@ min-height: 100vh;
       font-weight: 700;
       padding-top:44vh;
       letter-spacing:7px;
+      @include media($tablet) { 
+        padding-top:20%; 
+}    
       @include media($mobile) { 
-      font-size: 1.2em;
-      letter-spacing:4px;
+        padding-top:13vh;   
 }
   }
-  
 .third-header{
     font-size:0.8em;
     text-align: justify;
