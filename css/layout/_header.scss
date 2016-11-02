@@ -9,6 +9,10 @@
        background: url(img/bg.png) no-repeat bottom center; 
 }
 }
+.hidden{
+    display:none;
+    visibility: hidden;
+}
 .arrow-box{
   @include center-hor;
    padding-top:30px;

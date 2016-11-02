@@ -1,0 +1,41 @@
+  .item:hover .slide-text {
+    height: 20%; 
+  }
+      .item:hover .slide-text span {
+      color: white; }
+  
+  .slide-text {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  }
+    .item:hover .slide-text {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform:  none;
+    -o-transform:  none;
+    transform:  none; }
+    @media screen and (max-width: 1100px) {
+      .item:hover .slide-text {
+        -webkit-transform:  none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform:  none;
+        transform:  none; } }
+    @media screen and (max-width: 868px) {
+      .item:hover .slide-text {
+        -webkit-transform:  none;;
+        -moz-transform:  none;
+        -ms-transform:  none;
+        -o-transform:  none;
+        transform:  none; } }
+    @media screen and (max-width: 620px) {
+      .item:hover .slide-text {
+        -webkit-transform:  none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform:  none;
+        transform:  none; } }

@@ -4,11 +4,7 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Michal/Documents/NetBeansProjects/Challenge/index.html</file>
-            <file>file:/C:/Users/Michal/Documents/NetBeansProjects/Challenge/js/carousel.js</file>
-            <file>file:/C:/Users/Michal/Documents/NetBeansProjects/Challenge/css/modules/_work.scss</file>
-            <file>file:/C:/Users/Michal/Documents/NetBeansProjects/Challenge/css/layout/_header.scss</file>
-            <file>file:/C:/Users/Michal/Documents/NetBeansProjects/Challenge/css/modules/_contact.scss</file>
-            <file>file:/C:/Users/Michal/Documents/NetBeansProjects/Challenge/css/modules/_team.scss</file>
+            <file>file:/C:/Users/Michal/Documents/NetBeansProjects/Challenge/lib/owl-carousel/owl.carousel.css</file>
         </group>
     </open-files>
 </project-private>
