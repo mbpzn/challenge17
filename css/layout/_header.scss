@@ -1,12 +1,13 @@
 .main-header{ 
  padding-bottom: 8.2vw;
-  background: url(img/bg.png) no-repeat center; 
+  background: url(img/bg-min.png) no-repeat center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-      @include media($tablet) { 
-       background: url(img/bg.png) no-repeat bottom center; 
+    
+      @include media($mobile) { 
+       background: url(img/bg-xs-min.png) no-repeat bottom center; 
 }
 }
 .hidden{
@@ -15,7 +16,7 @@
 }
 .arrow-box{
   @include center-hor;
-   padding-top:30px;
+   padding-top:4vw;
     width: 40px;
     height: 40px;
     font-size: 40px;
@@ -31,9 +32,11 @@
        @include center-hor;
          text-transform: uppercase;
          color:#1a2732;
+         letter-spacing:1px;
 }
   .first-header{
       margin-top:0;
+      margin-bottom: 0;
       font-size: 3.6vw;
       font-weight: 700;
       padding-top:44vh;
@@ -42,18 +45,24 @@
         padding-top:20%; 
 }    
       @include media($mobile) { 
-        padding-top:13vh;   
+        padding-top:15vw;   
+}
+  }
+  
+  .second-header{
+        font-size:2vw;
+             @include media($mobile) { 
+       font-size:12px;
 }
   }
 .third-header{
-    font-size:0.8em;
+    font-size:12px;
     text-align: justify;
     -moz-text-align-last: center;
     text-align-last: center;
     padding:20px;
     max-width: 800px;
     font-weight:bolder;
-    letter-spacing:1px;
     line-height: 29px;
     @include media($mobile) { 
     font-size:0.6em;

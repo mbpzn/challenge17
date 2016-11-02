@@ -2,16 +2,20 @@
     padding-top:5%;
     padding-bottom:20%;
     margin-top:5%;
-    @include background-image(url("img/banner.png")); 
+   background-image: url("img/banner-min.png");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    @include media($tablet) {    
+   background-image: url("img/banner-sm-min.png");
+    }
     @include media($mobile) { 
         padding-bottom: 100%;
+   background-image: url("img/banner-xs-min.png");
     }
     .section-content{
         margin-top: 3%;
-        p,h1{
+        .section-header, .header-text{
             color:#ffffff;   
         }
     }

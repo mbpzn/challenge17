@@ -12,8 +12,6 @@ body {
   border: 0;
   font-family: "Lato", sans-serif;
   color: #3c3c3c; }
-  body h1, body h2, body p {
-    color: #3c3c3c; }
 
 /* Layouts */
 footer {
@@ -34,14 +32,14 @@ footer {
 
 .main-header {
   padding-bottom: 8.2vw;
-  background: url(img/bg.png) no-repeat center;
+  background: url(img/bg-min.png) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 620px) {
     .main-header {
-      background: url(img/bg.png) no-repeat bottom center; } }
+      background: url(img/bg-xs-min.png) no-repeat bottom center; } }
 
 .hidden {
   display: none;
@@ -52,7 +50,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 4vw;
   width: 40px;
   height: 40px;
   font-size: 40px;
@@ -72,10 +70,12 @@ footer {
   margin-right: auto;
   text-align: center;
   text-transform: uppercase;
-  color: #1a2732; }
+  color: #1a2732;
+  letter-spacing: 1px; }
 
 .first-header {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 3.6vw;
   font-weight: 700;
   padding-top: 44vh;
@@ -85,17 +85,22 @@ footer {
       padding-top: 20%; } }
   @media screen and (max-width: 620px) {
     .first-header {
-      padding-top: 13vh; } }
+      padding-top: 15vw; } }
+
+.second-header {
+  font-size: 2vw; }
+  @media screen and (max-width: 620px) {
+    .second-header {
+      font-size: 12px; } }
 
 .third-header {
-  font-size: 0.8em;
+  font-size: 12px;
   text-align: justify;
   -moz-text-align-last: center;
   text-align-last: center;
   padding: 20px;
   max-width: 800px;
   font-weight: bolder;
-  letter-spacing: 1px;
   line-height: 29px; }
   @media screen and (max-width: 620px) {
     .third-header {
@@ -200,13 +205,13 @@ section {
         margin-right: 0; } }
 
 .box1, .box4 {
-  background-image: url("img/team1.png"); }
+  background-image: url("img/team1-min.png"); }
 
 .box2 {
-  background-image: url("img/team2.png"); }
+  background-image: url("img/team2-min.png"); }
 
 .box3 {
-  background-image: url("img/team3.png"); }
+  background-image: url("img/team3-min.png"); }
 
 .box-first-header,
 .box-second-header {
@@ -348,7 +353,6 @@ section {
   background-position: center top, center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 0 0 0;
   height: 20vw;
   margin: 0;
   color: #FFF;
@@ -365,13 +369,13 @@ section {
       color: white; }
 
 .item1 {
-  background-image: url("img/slide1.png"); }
+  background-image: url("img/slide1-min.png"); }
 
 .item2 {
-  background-image: url("img/slide2.png"); }
+  background-image: url("img/slide2-min.png"); }
 
 .item3 {
-  background-image: url("img/slide3.png"); }
+  background-image: url("img/slide3-min.png"); }
 
 .owl-carousel {
   margin-top: 20px; }
@@ -409,17 +413,20 @@ section {
   padding-top: 5%;
   padding-bottom: 20%;
   margin-top: 5%;
-  background-image: url("img/banner.png");
-  background-image: url("img/banner.png");
+  background-image: url("img/banner-min.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 868px) {
+    .clients {
+      background-image: url("img/banner-sm-min.png"); } }
   @media screen and (max-width: 620px) {
     .clients {
-      padding-bottom: 100%; } }
+      padding-bottom: 100%;
+      background-image: url("img/banner-xs-min.png"); } }
   .clients .section-content {
     margin-top: 3%; }
-    .clients .section-content p, .clients .section-content h1 {
+    .clients .section-content .section-header, .clients .section-content .header-text {
       color: #ffffff; }
 
 .clients-container {
