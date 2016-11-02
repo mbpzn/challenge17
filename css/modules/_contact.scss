@@ -1,144 +1,134 @@
-.contact{
-    
-  form{
-@include span-columns(8);
-@include media($mobile) { 
-@include span-columns(8);
-}
-}
- .socials{
-@include span-columns(4);
-@include media($mobile) {
-@include shift(1);
-@include span-columns(8);
-margin-top:5%;
-margin-left: 12px;
-margin-bottom: 5%;
-max-width: 200px;
-    .icon-group{
-        div{
-     padding-top:3%;
-     padding-bottom:3%;
+.contact{   
+    form{
+        @include span-columns(8);
+        @include media($mobile) { 
+            @include span-columns(8);
         }
-    @include center-hor;
-    i{
-      font-size:1.4em;   
     }
+    .socials{
+        @include span-columns(4);
+        @include media($mobile) {
+            @include shift(1);
+            @include span-columns(8);
+            margin-top:5%;
+            margin-left: 12px;
+            margin-bottom: 5%;
+            max-width: 200px;
+            .icon-group{
+                div{
+                    padding-top:3%;
+                    padding-bottom:3%;
+                }
+                @include center-hor;
+                i{
+                    font-size:1.4em;   
+                }
+            }
+        }
     }
-}
- 
- }
- 
- .icon-box1{
-    background-color:  #0e9ef9; 
- }
- .icon-box2{
-     background-color:  #51d7fd;
- }
- .icon-box3{
-     background-color:  #fa4e9b;
- }
- .icon-box4{
-     background-color:  #2a63ab;
- }
- .icon-box5{
-     background-color:  #f13131;
- }
- 
-    
-.message,.email,.first {
-  height: 50px;
-  width: 90%;
-  line-height: 50px;
-  border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
-      &:active, &:focus, &:hover{
-          border-top:0;
-          
-      }
-  }
- input{ 
-    display: block;
-    box-sizing: border-box;
-  &:focus { 
-    outline: none !important;
-    border:0;
-    border-bottom: 1px solid rgba(0,0,0,.5);
-}
- }
- fieldset{
-     border:none;
-
- }
- button {
-margin:20px;
-margin-left:12px;
-color:  #ffffff;
-background-color:  #ea6751;
-width: 170px;
-height: 41px;
-   border:none;
-    &:hover {
-      background: rgba(192, 57, 43,1.0);
-      cursor: pointer;
+    .icon-box1{
+        @include transition(all 0.3s ease-in-out);
+        background-color:  #0e9ef9; 
+    }
+    .icon-box2{
+        background-color:  #51d7fd;
+    }
+    .icon-box3{
+        background-color:  #fa4e9b;
+    }
+    .icon-box4{
+        background-color:  #2a63ab;
+    }
+    .icon-box5{
+        background-color:  #f13131;
+    }   
+    .message,.email,.first {
+        height: 50px;
+        width: 90%;
+        line-height: 50px;
+        border: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+        &:active, &:focus, &:hover{
+            border-top:0;       
+        }
+    }
+    input{ 
+        display: block;
+        box-sizing: border-box;
+        &:focus { 
+            outline: none !important;
+            border:0;
+            border-bottom: 1px solid rgba(0,0,0,.5);
+        }
+    }
+    fieldset{
+        border:none;
+    }
+    button {
+        margin:20px;
+        margin-left:12px;
+        color:  #ffffff;
+        background-color:  #ea6751;
+        width: 170px;
+        height: 41px;
+        border:none;
+        &:hover {
+            background: rgba(192, 57, 43,1.0);
+            cursor: pointer;
+        }  
+        &:focus {
+            outline: none; 
+        }
+    }
+    h2{
+        margin-left:12px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
     }  
-    &:focus {
-       outline: none; 
-    }
-  }
-h2{
-margin-left:12px;
-font-size: 24px;
-font-weight: 700;
-line-height: 24px;
-}  
-
-
-
 }
 .icon-box,
- .icon-box1,
- .icon-box2,
- .icon-box3,
- .icon-box4,
- .icon-box5{
-   @include media($xs) {       
-   @include span-columns(2);
-}  
-     @include center-hor;
-     width: 65%;
-     padding-top:5%;
-     padding-bottom:5%;
-     &:hover{
-       cursor:pointer;
-       background-color: white;
-       i{
-           color: map_get($colors, black-light); 
-       }   
-   }
-   
-   i{
-    max-width: 50px;
+.icon-box1,
+.icon-box2,
+.icon-box3,
+.icon-box4,
+.icon-box5{
+          @include transition(all 0.5s ease-in-out);
+    @include media($xs) {       
+        @include span-columns(2);
+    }  
     @include center-hor;
-   font-size:1.6em;
-   color:#ffffff;
-   &:hover{
-       cursor:pointer;
-       
-   }
-}
- }
-@font-face {
-      font-family: 'fontello';
-      src: url('./font/fontello.eot?84730550');
-      src: url('./font/fontello.eot?84730550#iefix') format('embedded-opentype'),
-           url('./font/fontello.woff?84730550') format('woff'),
-           url('./font/fontello.ttf?84730550') format('truetype'),
-           url('./font/fontello.svg?84730550#fontello') format('svg');
-      font-weight: normal;
-      font-style: normal;
+    width: 65%;
+    padding-top:5%;
+    padding-bottom:5%;
+    &:hover{
+        cursor:pointer;
+        background-color: white;
+        i{
+            color: map_get($colors, black-light); 
+        }   
     }
-     
-   
-  
- 
+    i{
+                @include transition(all 0.2s ease-in-out);
+        max-width: 50px;
+        @include center-hor;
+        font-size:1.6em;
+        color:#ffffff;
+        &:hover{
+            cursor:pointer;  
+        }
+    }
+}
+@font-face {
+    font-family: 'fontello';
+    src: url('./font/fontello.eot?84730550');
+    src: url('./font/fontello.eot?84730550#iefix') format('embedded-opentype'),
+        url('./font/fontello.woff?84730550') format('woff'),
+        url('./font/fontello.ttf?84730550') format('truetype'),
+        url('./font/fontello.svg?84730550#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

@@ -1,18 +1,27 @@
-
-.hidden{
-    display:none;
-}
 .main-header{ 
-min-height: 100vh;
+ padding-bottom: 8.2vw;
   background: url(img/bg.png) no-repeat center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   img{
-      @include center-hor;
-      padding-top:40px;
-  }
+      @include media($tablet) { 
+       background: url(img/bg.png) no-repeat bottom center; 
+}
+}
+.arrow-box{
+  @include center-hor;
+   padding-top:30px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
 }
 .first-header,.second-header,.third-header{
        @include center-hor;
@@ -25,12 +34,13 @@ min-height: 100vh;
       font-weight: 700;
       padding-top:44vh;
       letter-spacing:7px;
+      @include media($tablet) { 
+        padding-top:20%; 
+}    
       @include media($mobile) { 
-      font-size: 1.2em;
-      letter-spacing:4px;
+        padding-top:13vh;   
 }
   }
-  
 .third-header{
     font-size:0.8em;
     text-align: justify;
@@ -41,7 +51,7 @@ min-height: 100vh;
     font-weight:bolder;
     letter-spacing:1px;
     line-height: 29px;
-     @include media($mobile) { 
-       font-size:0.6em;
+    @include media($mobile) { 
+    font-size:0.6em;
 }   
   }

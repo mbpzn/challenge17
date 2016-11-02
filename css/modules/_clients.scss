@@ -2,7 +2,7 @@
     padding-top:5%;
     padding-bottom:20%;
     margin-top:5%;
-    @include background-image(url("/img/banner.png"), url("img/banner.png")); 
+    @include background-image(url("img/banner.png")); 
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
